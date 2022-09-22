@@ -38,12 +38,15 @@ public class Empresa {
         System.out.println("Sua bonificação é de: " + p1.getBonificacao() + " R$.");
         System.out.println();
 
-        BonificacaoControle();
+        bonificacaoControle();
+        System.out.println();
+
+        sistemaInterno();
 
 
     }
 
-    public static void BonificacaoControle(){
+    public static void bonificacaoControle(){
 
         Gerente g1 = new Gerente();
 
@@ -63,6 +66,19 @@ public class Empresa {
 
         System.out.println(controle.getSoma());
 
+    }
+
+    public static void sistemaInterno(){
+
+        Gerente g = new Gerente();
+        g.setSenha(2222);
+
+        Diretor d = new Diretor();
+        d.setSenha(3333);
+
+        SistemaInterno si = new SistemaInterno();
+        si.autentica(g);
+        si.autentica(d);
     }
 
 }

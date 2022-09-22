@@ -4,10 +4,13 @@ public class SistemaInterno {
 
     private int senha = 2222;
 
-    public boolean autentica(int senha){
-        if(this.senha == senha){
+    public boolean autentica(FuncionarioAutenticavel fa){
+        boolean autenticou = fa.autentica(this.senha);
+        if(autenticou){
+            System.out.println("Pode entrar no sistema");
             return true;
         } else {
+            System.out.println("Não pode entrar no sistema");
             return false;
         }
     }
