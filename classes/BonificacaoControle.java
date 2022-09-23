@@ -4,8 +4,8 @@ public class BonificacaoControle {
 
     private double soma;
 
-    public void registra(Funcionario f){
-        double boni = f.getBonificacao();
+    public void registra(Autenticavel fa){
+        double boni = fa.getBonificacao();
         this.soma = this.soma + boni;
 
     }

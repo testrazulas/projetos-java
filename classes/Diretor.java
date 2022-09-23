@@ -1,6 +1,6 @@
 package classes;
 
-public class Diretor extends FuncionarioAutenticavel{
+public class Diretor extends Autenticavel {
 
     public double getBonificacao(){
         System.out.println("Bonificação do Diretor");
