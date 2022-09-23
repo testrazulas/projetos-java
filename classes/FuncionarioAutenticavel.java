@@ -1,6 +1,6 @@
 package classes;
 
-public abstract class Autenticavel extends Funcionario {
+public abstract class FuncionarioAutenticavel extends Funcionario {
 
     private int senha;
 

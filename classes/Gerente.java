@@ -1,6 +1,6 @@
 package classes;
 
-public class Gerente extends Autenticavel {
+public class Gerente extends FuncionarioAutenticavel {
 
     public Gerente(){
 
